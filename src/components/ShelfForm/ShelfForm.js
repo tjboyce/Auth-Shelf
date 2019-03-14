@@ -18,7 +18,7 @@ class ShelfForm extends Component {
 
 
     handleSubmit = () => {
-        console.log('in handleSubmit');
+        console.log('in handleSubmit', this.state);
         this.props.dispatch({
             type: 'ADD_ITEM',
             payload: this.state,
@@ -43,7 +43,7 @@ class ShelfForm extends Component {
 
 
     render() {
-        console.log(this.state);
+       
         
         return (
             <form onSubmit={this.handleSubmit}>

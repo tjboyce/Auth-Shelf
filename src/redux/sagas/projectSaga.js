@@ -22,8 +22,9 @@ function* fetchItem() {
 
 function* postItem(action) {
     try {
+        console.log('postitem', action);
         yield axios.post('api/shelf', action.payload);
-        yield dispatch({ type: 'FETCH_git ITEM' });
+        yield dispatch({ type: 'FETCH_ITEM' });
     } catch (error) {
         console.log('this was an error with the post- probably your fault');
 
