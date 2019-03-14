@@ -6,9 +6,9 @@ import { connect } from 'react-redux';
 
 
 class ShelfForm extends Component {
-    // componentDidMount() {
-    //     this.props.dispatch({ type: 'FETCH_ITEM' })
-    // }
+    componentDidMount() {
+        this.props.dispatch({ type: 'FETCH_ITEM' })
+    }
 
     state = {
         description: '',
@@ -46,6 +46,7 @@ class ShelfForm extends Component {
        
         
         return (
+            <>
             <form onSubmit={this.handleSubmit}>
                 <input
                     placeholder="description"
@@ -62,6 +63,11 @@ class ShelfForm extends Component {
                 <button type="Submit">Add Shelf Item</button>
             </form>
 
+            <div>
+                {JSON.stringify(this.props.itemList)}
+            </div>
+            
+            </>
         )
     }
 }
