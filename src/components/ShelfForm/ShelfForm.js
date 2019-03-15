@@ -13,7 +13,7 @@ class ShelfForm extends Component {
     state = {
         description: '',
         imageUrl: '',
-
+        user_id: this.props.user.id
     };
 
 
@@ -43,7 +43,6 @@ class ShelfForm extends Component {
 
 
     render() {
-       
         
         return (
             <>
