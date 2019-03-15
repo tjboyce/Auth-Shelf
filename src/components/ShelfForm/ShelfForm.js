@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import InfoPage from '../InfoPage/InfoPage';
 
 
 
@@ -63,7 +64,13 @@ class ShelfForm extends Component {
             </form>
 
             <div>
-                {JSON.stringify(this.props.itemList)}
+               
+
+                
+             
+               
+               {/* {this.props.itemList.map((items) => { return (<InfoPage key={items.id} items={items} />); })}
+     */}
             </div>
             
             </>
