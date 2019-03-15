@@ -15,7 +15,15 @@ class InfoPage extends Component {
     this.props.dispatch({ type: 'FETCH_ITEM' })
   }
 
+  handleClick = id => () => {
+    console.log('id', id);
+    
+    this.props.dispatch({ type: 'DELETE_ITEM', payload: id})
+  }
+
   render() {
+    console.log(this.props.itemList);
+    
 
     return (
       <>
@@ -23,7 +31,7 @@ class InfoPage extends Component {
         <li>
           {/* {JSON.stringify(this.props.itemList)} */}
             {this.props.itemList.map((items) =>  
-            <li key={items.id}> {items.description} / {items.image_url} </li> )} 
+            <li key={items.id}> {items.description} / {items.image_url} / <button onClick={this.handleClick(items.id)}>Delete</button> </li> )} 
         </li>
       </ul>
         
