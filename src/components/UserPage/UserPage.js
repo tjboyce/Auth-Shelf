@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import LogOutButton from '../LogOutButton/LogOutButton';
-import ShelfForm from '../ShelfForm/ShelfForm';
+
 
 // this could also be written with destructuring parameters as:
 // const UserPage = ({ user }) => (
 // and then instead of `props.user.username` you could use `user.username`
 const UserPage = (props) => (
+
   <div>
     
     <h1 id="welcome">
@@ -14,8 +15,8 @@ const UserPage = (props) => (
     </h1>
     <p>Your ID is: {props.user.id}</p>
     <LogOutButton className="log-in" />
-    <ShelfForm />
   </div>
+
 );
 
 // Instead of taking everything from state, we just want the user info.

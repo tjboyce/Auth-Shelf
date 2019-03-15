@@ -15,6 +15,7 @@ import RegisterPage from '../RegisterPage/RegisterPage';
 // and by checking req.user for authorization
 
 const ProtectedRoute = (props) => {
+  console.log(props);
   // Using destructuring, this takes ComponentToProtect from component
   // prop and grabs all other props to pass them along to Route
   const {
