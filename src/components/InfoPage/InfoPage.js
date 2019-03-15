@@ -7,9 +7,29 @@ import React from 'react';
 
 const InfoPage = () => (
   <div>
-    <p>
-      Info Page
-    </p>
+   
+      <table>
+        <thead>
+        <tr>
+          <th>Description</th>
+          <th>Image URL</th>
+       
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+         
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+     
+        </tr>
+      </tbody>
+      </table>
+   
   </div>
 );
 

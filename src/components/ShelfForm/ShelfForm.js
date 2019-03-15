@@ -64,6 +64,7 @@ class ShelfForm extends Component {
 
             <div>
                 {JSON.stringify(this.props.itemList)}
+                
             </div>
             
             </>
